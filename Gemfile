@@ -1,6 +1,4 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "jekyll", "~> 4.1"
-gem "jekyll-environment-variables"
-gem "jekyll-postcss"
-gem "jekyll-paginate"
+source "https://rubygems.org"
+gemspec

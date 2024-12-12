@@ -1,22 +1,30 @@
-# NPM
-node_modules
-npm-debug.log
+# borrowed from
+# https://github.com/github/gitignore.git
 
-# Jekyll
-_site
+# Jekyll.gitignore
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
-**/Gemfile.lock
 
-# Temporary files
-tmp
-.DS_Store
-Desktop.ini
-._*
-Thumbs.db
-.Spotlight-V100
-.Trashes
-.idea
+# Ruby.gitignore
+*.gem
+*.rbc
+/.bundle/
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+Gemfile.lock
+.ruby-version
+.ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# Node.gitignore
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Editor generated files
+.vscode
+*.swp

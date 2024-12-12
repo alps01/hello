@@ -1,103 +1,70 @@
-# Jekyll Atlantic - Jekyll + Tailwind Starter Theme
+# [Lone Wolf Theme Jekyll][1]
 
-Atlantic is a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/manid2/lone-wolf-theme/blob/master/LICENSE)
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.8-blue.svg)][jekyll]
+[![Ruby gem](https://badge.fury.io/rb/lone-wolf-theme.svg)](https://rubygems.org/gems/lone-wolf-theme/)
+[![Build Status](https://travis-ci.com/manid2/lone-wolf-theme.svg?branch=master)](https://travis-ci.com/manid2/lone-wolf-theme)
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
+A simple [bootstrap][bs4] based jekyll theme.
 
-![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
+It uses
 
-## Theme features
+- [github-pages compatible gems][gh-gems]
+- [bootswatch wrappers][bootswatch]
+- [animate.css][ani-css].
 
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/) 8.3+
+## Who uses it
 
-- Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
-- Works with native Jekyll commands `jekyll serve` and `jekyll build`
-- Correctly uses Tailwind to purge CSS in production
-- Full blog functionality
-- Beautfifuly designed responsive blog and post layouts
-- Blog categories
-- Blog authors (multiple)
-- Blog pagination
-- Ready to deploy to Netlify
-- Responsive design
-- Responsive menu
-- 100/100 Google Lighthouse speed score ⚡
-- 100/100 Google Lighthouse seo score 🏆
-- 94/100 Google Lighthouse accessibility score (but this is just because of the green text color contrast)
-- Page size is 10KB without images, can you believe it?? 🔥
-- Robust example content included
-- Royalty free illustrations included
-- Netlify & Github Pages ready
+- [Lone wolf theme docs][1]
+
+## Screenshots
+
+![Lone wolf theme screenshot][lwt_ss_all_img]
+
+<!-- Images -->
+[lwt_ss_all_img]: lwt_screenshots/lwt_ss_all_in_one.png "Lone wolf theme screenshot"
 
 ## Installation
 
-### Installing Ruby & Jekyll
- 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
+### Using remote theme
 
-### Installing Theme
+Easiest way to use the theme if you dont want to make changes to the theme's
+code.
 
-Download or clone the theme.
+- Add `remote_theme    : "manid2/lone-wolf-theme"` to your `_config.yml` file.
 
-To run the theme locally, navigate to the theme directory and run:
+### By forking the theme repository
 
-To use Tailwind and PostCSS:
+If you want to make changes to the code and to truly own the site.
+Follow the blog on [smashing magazine][sm-gh-pages] to learn about this method.
 
-```
-npm install
-```
+### As a ruby gem
 
-```
-bundle install
-``` 
+When you want to host the site on any server other than the github pages
+and also to make use of plenty of jekyll plugins.
 
-To start the Jekyll local development server.
+- Add `gem "lone-wolf-theme"` to your `Gemfile`.
+- Update bundled gems by using `bundle` command.
+- Add `theme    : "lone-wolf-theme"` to your `_config.yml`.
 
-```
-bundle exec jekyll serve
-``` 
+## Contribution
 
-To build the theme.
- 
-```
-bundle exec jekyll build
-```
+Use the link to learn how to [contribute][3] to LWT.
 
-## Deployment
+## Sponsor
 
-### Netlify
+If you like this theme and want to support its development please consider
+sponsoring.
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml`
+<a href="https://buymeacoffee.com/manid2" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="42" width="174"></a>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-atlantic-theme)
+<!-- Links in the post -->
+[jekyll]: https://jekyllrb.com/
+[bs4]: https://getbootstrap.com/
+[bootswatch]: https://bootswatch.com/
+[gh-gems]: https://pages.github.com/versions/
+[ani-css]: https://daneden.github.io/animate.css/
+[sm-gh-pages]: https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 
-### Github Pages
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
-
-For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme would have `baseurl: "/jekyll-atlantic-theme/"`
-
-## Extras
-
-### License
-
-- Don't create ports or new versions of this theme without asking me
-- You can't re-distribute or re-sell this theme as your own template
-
-### Credits 
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-### Other Jekyll Themes by Zerostatic
-
-- [Jekyll Serif](https://github.com/zerostaticthemes/jekyll-serif-theme) - Open Source
-- [Jekyll Advance](https://www.zerostatic.io/theme/jekyll-advance/) - Premium
-- [Jekyll Curate](https://github.com/zerostaticthemes/jekyll-curate) - Premium
-- [Jekyll Origin](https://www.zerostatic.io/theme/jekyll-origin/) - Premium
-
-🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
-
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[1]: https://manid2.github.io/lone-wolf-theme/
+[3]: https://manid2.github.io/lone-wolf-theme/contribute/
